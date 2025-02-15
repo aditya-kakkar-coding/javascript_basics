@@ -69,4 +69,14 @@ obj = {toString(){
 }}
 //console.log(10-obj)
 
+//addition operator
+// 1st check if any of value is string then convert both to string and then concat
+// else convert to number and add
+console.log("10"+2); //102
+console.log(10+"ab"); //10ab
+console.log(10+undefined) //NaN
+console.log(10+NaN)
+console.log(10+{})
+console.log(10+{A:23})
+
 
