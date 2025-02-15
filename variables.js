@@ -44,3 +44,12 @@ let y2 = 2**3; //exponents 2^3
 //           &111  (7)
 //           _________
 //            101  (5) -> (answer)
+
+//difference between == and ===
+console.log("23"===23) // false -> no typeconversion take place
+console.log("23"==23) // true -> after type conversion this check happens
+
+console.log(0 === false);  // false (number !== boolean)
+console.log(null === undefined);  // false (different types)
+console.log(0 == false);  // true  (false is converted to number 0)
+console.log(null == undefined);  // true (special case)
