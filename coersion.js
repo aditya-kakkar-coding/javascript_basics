@@ -90,6 +90,10 @@ console.log(-"1")   //-1
 //console.log(*10) //error (unexpected token *)
 //console.log(%10) //error
 
+// toBoolean -> called in -> if(!x){xxxxx}
+// falsy values => undefined , null , +0 , 0 , -0 , NaN , false , '' (empty string)
+// other than these all true
+
 
 
 
