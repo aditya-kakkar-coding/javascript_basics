@@ -5,6 +5,7 @@ console.log(typeof(arr))  // array is internally implimented as an object
 //though they inherit functions differently like Array.prototype and Object.prototype
 arr = {0:1,1:2,2:3,3:4,4:5} 
 arr = Object.values(arr) //changes object to array
+//Object.keys(arr) // to get array of keys of object
 
 //higher order function is where we pass a function as argument.
 //in following case map is higher order function in which square function is passed

@@ -11,3 +11,14 @@ for( let i = 0 ; i < arr.length ; i++ ){
 for ( let value of arr){    
     console.log("From for of loop :", value)
 }
+
+let obj = { name:"adi",age: 5,place: "patna"}
+
+for (let keys in arr){
+    console.log("for in loop: ",keys)
+}
+
+// for in loop is also used to get keys or iterate over object ( it can also be used by array but it returns index of array and not its values )
+for (let keys in obj){
+    console.log("for in loop on object: ",keys)
+}

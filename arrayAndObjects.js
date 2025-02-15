@@ -32,3 +32,9 @@ console.log("obj finally: ",obj)
 
 delete obj.place
 console.log("obj after delete: ",obj)
+
+// Object.keys(obj) -> to get array of keys of object
+// Object.values(obj) -> to get array of values of object
+
+const objArrayEntires = Object.entries(obj); // return a 2d array with key at 0th index and value at 1st index
+console.log("obj to 2d array: ", objArrayEntires)
