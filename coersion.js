@@ -69,14 +69,28 @@ obj = {toString(){
 }}
 //console.log(10-obj)
 
+console.log("/"-10) //NaN
+
 //addition operator
 // 1st check if any of value is string then convert both to string and then concat
-// else convert to number and add
+// else call tonumber and add
+
 console.log("10"+2); //102
 console.log(10+"ab"); //10ab
 console.log(10+undefined) //NaN
-console.log(10+NaN)
-console.log(10+{})
-console.log(10+{A:23})
+console.log(10+NaN)//NaN
+console.log(10+{}) //10[object Object]
+console.log(10+{A:23}) //10[object Object]
+
+console.log("/"+10) // /10
+
+//unary operand
+console.log(+"10") //10
+console.log(-"1")   //-1
+//console.log(*10) //error (unexpected token *)
+//console.log(%10) //error
+
+
+
 
 
