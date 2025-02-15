@@ -18,7 +18,7 @@ let obj = {}
 
 // method 2 -> using only object
 // for ( let value of str ){
-//    if (obj[`${value}`]){
+//    if (obj[`${value}`]){ //`${value} is value in string` -> this is interpolated string
 //       obj[`${value}`] = obj[`${value}`]+1;
 //    }
 //    else{
