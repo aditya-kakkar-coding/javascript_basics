@@ -6,7 +6,7 @@
 // multi datatype array is also possible
 
 
-// string are immutable(cannot be changed) but array is multable (arr[2]=3);
+// string are immutable(cannot be changed) but array and object is multable (arr[2]=3);
 
 let arr = [0,null, undefined,3,"adi"];
 console.log("initial array : ", arr);
@@ -15,6 +15,20 @@ arr[3] = 4;
 console.log("after mutating : ",arr);
 
 let str = "aditya kakkar";
-console.log("initial str", str)
+console.log("initial str: ", str)
 str[4] = "y"; // there is no error but sting doesn't update
-console.log("changed str", str)
+console.log("changed str: ", str)
+
+
+let obj = {name:"adi", age:5};
+console.log("obj initial name: ",obj["name"]) // when [] is used key should be given as string
+console.log("obj initial name: ",obj.name)
+obj.name = "kakkar"  // updating object
+console.log("obj changed name: ", obj.name)
+
+console.log("obj initial: ",obj)
+obj.place = "patna" // add key value pair in object
+console.log("obj finally: ",obj)
+
+delete obj.place
+console.log("obj after delete: ",obj)
