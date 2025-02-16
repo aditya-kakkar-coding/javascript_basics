@@ -4,4 +4,4 @@ console.log(isNaN(x)) //true
 console.log(isNaN("sanket")) //true
 console.log(Number.isNaN("sanket")) //false
 
-// better way to check NaN is to use Number.isNaN(XX)
+// better way to check NaN is to use Number.isNaN(XX) => DOES'T USE COERSION
