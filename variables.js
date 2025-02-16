@@ -65,3 +65,7 @@ console.log(+0===-0) //true same for ==
 obj1 = {a:10}
 obj2 = {a:10}
 console.log(obj1===obj2) //false different memory location same of ==
+
+// == and === both are required
+// when we know what type of variables will be coming according to that
+// 0 === false => false || 0 == false => true
