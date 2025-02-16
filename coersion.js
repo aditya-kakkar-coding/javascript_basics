@@ -94,6 +94,21 @@ console.log(-"1")   //-1
 // falsy values => undefined , null , +0 , 0 , -0 , NaN , false , '' (empty string)
 // other than these all true
 
+// toString (another abstraction operation)
+// 1. null,undefined,true,false => "null","undefined","true","false"
+// 2. number => numberToString() => { +0 , -0 => "0"; [] => ""=>(empty string)}
+// 3. symbol => TypeError
+// 4. object => toPrimitive(hint:string)
+
+console.log(""+[null,undefined]) // , => null undefined and [] are removed => array has a custom toString() method which makes it a comma separated string
+
+console.log([]+0) //0
+console.log([3,4]-2) //NaN
+console.log([""]+0) //0
+console.log(["0"]+0) //00
+console.log([0]+0) //00
+
+
 
 
 
