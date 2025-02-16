@@ -102,11 +102,17 @@ console.log(-"1")   //-1
 
 console.log(""+[null,undefined]) // , => null undefined and [] are removed => array has a custom toString() method which makes it a comma separated string
 
+// FEW MORE EXAMPLES
 console.log([]+0) //0
 console.log([3,4]-2) //NaN
 console.log([""]+0) //0
 console.log(["0"]+0) //00
 console.log([0]+0) //00
+
+let objNew = {a:10,b:20};
+console.log("object coerse: "+objNew) //object always coerse: [object Object]
+console.log("object doesn't coerse: ",objNew) //object always coerse:  { a: 10, b: 20 }
+console.log(`object coerse: ${objNew} `) //object always coerse: [object Object] 
 
 
 
