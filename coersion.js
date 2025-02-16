@@ -114,6 +114,10 @@ console.log("object coerse: "+objNew) //object always coerse: [object Object]
 console.log("object doesn't coerse: ",objNew) //object always coerse:  { a: 10, b: 20 }
 console.log(`object coerse: ${objNew} `) //object always coerse: [object Object] 
 
+// multiple comparison operator
+console.log(1<2<3); //true: 1<2-> true => true<3 =>1<3 => true
+console.log(3>2>1); // false : 3>2 => true => true > 1 => 1 > 1 => false
+
 
 
 
